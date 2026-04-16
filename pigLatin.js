@@ -31,6 +31,10 @@ function translateWord(word) {
 if (!input) {
     console.log("Please run: node pigLatin.js \"your phrase here\"");
 } else {
+
+    //const result = input.split('').map(translateWord).join('');
+
+
     // Split the input string into an array of words
     const words = input.split(' ');
 
