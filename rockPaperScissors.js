@@ -17,10 +17,11 @@ function determineWinner(user, computer) {
     return 'Computer wins!';
 };
 
-
 if (!userChoice) {
     console.log("Welcome to 'Rock Paper Scissors' Game");
     console.log("To play the game, please run 'rockPaperScissors.js <user-choice>' ");
 } else {
-    console.log(determineWinner(userChoice, getRandomChoice()));
+    const computerChoice = getRandomChoice();
+    const result = determineWinner(userChoice, computerChoice);
+    console.log(`You chose ${userChoice}. Computer chose ${computerChoice}.\n${result}`);
 }
